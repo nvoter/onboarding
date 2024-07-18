@@ -11,6 +11,7 @@
 		5252983A2C39C03A00B72E3D /* OnboardingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525298392C39C03A00B72E3D /* OnboardingApp.swift */; };
 		5252983E2C39C03B00B72E3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5252983D2C39C03B00B72E3D /* Assets.xcassets */; };
 		525298412C39C03B00B72E3D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525298402C39C03B00B72E3D /* Preview Assets.xcassets */; };
+		52A5B2BF2C493B880013A198 /* CustomPageIndexViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A5B2BE2C493B880013A198 /* CustomPageIndexViewStyle.swift */; };
 		52F7A01A2C3A086200F11413 /* OnboardedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F7A0192C3A086200F11413 /* OnboardedView.swift */; };
 /* End PBXBuildFile section */
 
@@ -20,6 +21,7 @@
 		525298392C39C03A00B72E3D /* OnboardingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingApp.swift; sourceTree = "<group>"; };
 		5252983D2C39C03B00B72E3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525298402C39C03B00B72E3D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		52A5B2BE2C493B880013A198 /* CustomPageIndexViewStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPageIndexViewStyle.swift; sourceTree = "<group>"; };
 		52F7A0192C3A086200F11413 /* OnboardedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 				5252983F2C39C03B00B72E3D /* Preview Content */,
 				52F7A0192C3A086200F11413 /* OnboardedView.swift */,
 				5205EF372C4406F7003B2CEB /* Onboarding.swift */,
+				52A5B2BE2C493B880013A198 /* CustomPageIndexViewStyle.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5252983A2C39C03A00B72E3D /* OnboardingApp.swift in Sources */,
+				52A5B2BF2C493B880013A198 /* CustomPageIndexViewStyle.swift in Sources */,
 				5205EF382C4406F7003B2CEB /* Onboarding.swift in Sources */,
 				52F7A01A2C3A086200F11413 /* OnboardedView.swift in Sources */,
 			);
