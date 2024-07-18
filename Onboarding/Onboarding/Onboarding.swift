@@ -44,7 +44,6 @@ struct SeasonModel: Identifiable {
 struct Onboarding: View {
     @Binding var isOnboarded: Bool
     @State var currentStep: Int = 0
-    @State var currentColors: [Color] = []
     
     let seasons: [SeasonModel]
     
@@ -91,8 +90,11 @@ struct Onboarding: View {
                         .tag(index)
                     }
                 }
-                .tabViewStyle(PageTabViewStyle())
-                .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+                .overlay(alignment: .bottom) {
+                    CustomPageIndexViewStyle(currentIndex: $currentStep, color: .white.opacity(0.5), numberOfPages: seasons.count)
+                        .padding(.bottom)
+                }
                 
                 HStack {
                     if currentStep > 0 {
@@ -108,6 +110,7 @@ struct Onboarding: View {
                         .padding(15)
                         .background(Color(.systemGray4))
                         .cornerRadius(40)
+                        .transition(.asymmetric(insertion: .push(from: .leading), removal: .push(from: .trailing)))
                     }
                     
                     if currentStep < seasons.count - 1 {
@@ -136,9 +139,9 @@ struct Onboarding: View {
                             }
                             .foregroundColor(.black)
                             .fontWeight(.bold)
+                            .frame(maxWidth: .infinity)
                         }
                         .padding(15)
-                        .frame(maxWidth: .infinity)
                         .background(.white)
                         .cornerRadius(40)
                     }
